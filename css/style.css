@@ -1,0 +1,785 @@
+@charset "UTF-8";
+* {
+  margin: 0em;
+  padding: 0em;
+}
+
+.idea1 {
+  box-sizing: border-box;
+  border: 0.1em dashed red;
+}
+
+.idea2 {
+  box-sizing: border-box;
+  border: 0.1em dashed blue;
+}
+
+.idea3 {
+  box-sizing: border-box;
+  border: 0.1em dashed yellow;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.ib {
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+.tac {
+  text-align: center;
+}
+
+/*-----------------------------------*\
+  $TOAST-GRID
+  An insane grid.
+  You'd be mad to use it.
+  Usage
+  =====
+  Assuming default values:
+  <div class="grid">
+    <div class="grid__col grid__col--1-of-2">
+      A half-width column.
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--pull-1-of-4">
+      A quarter, pulled left by its own width. You get this, right?
+    </div>
+  </div>
+  Customisation
+  =============
+  $toast-grid-namespace and $toast-grid-column-namespace
+  adjusts the class names for the grid. With
+  default values, grid wrappers have a class
+  of '.grid' and columns '.grid__col'.
+  $toast-col-groups(n) adjusts column divisions.
+  For example, $toast-col-groups(12) will produce
+  a 12-column grid. $col-groups(3,6,8)
+  will produce a 3-, 6-, and 8-column grid.
+  $toast-gutter-width is—you guessed it—the gutter
+  width. Accepts any unit.
+  That's it. Have fun.
+\*-----------------------------------*/
+.grid {
+  list-style: none;
+  margin-left: -10px;
+}
+
+.grid__col--2-of-2, .grid__col--3-of-3, .grid__col--4-of-4, .grid__col--5-of-5, .grid__col--6-of-6, .grid__col--8-of-8, .grid__col--12-of-12 {
+  width: 100%;
+}
+
+.grid__col--1-of-2, .grid__col--2-of-4, .grid__col--3-of-6, .grid__col--4-of-8, .grid__col--6-of-12 {
+  width: 50%;
+}
+
+.grid__col--1-of-3, .grid__col--2-of-6, .grid__col--4-of-12 {
+  width: 33.33333%;
+}
+
+.grid__col--2-of-3, .grid__col--4-of-6, .grid__col--8-of-12 {
+  width: 66.66667%;
+}
+
+.grid__col--1-of-4, .grid__col--2-of-8, .grid__col--3-of-12 {
+  width: 25%;
+}
+
+.grid__col--3-of-4, .grid__col--6-of-8, .grid__col--9-of-12 {
+  width: 75%;
+}
+
+.grid__col--push-2-of-2, .grid__col--push-3-of-3, .grid__col--push-4-of-4, .grid__col--push-5-of-5, .grid__col--push-6-of-6, .grid__col--push-8-of-8, .grid__col--push-12-of-12 {
+  margin-left: 100%;
+}
+
+.grid__col--push-1-of-2, .grid__col--push-2-of-4, .grid__col--push-3-of-6, .grid__col--push-4-of-8, .grid__col--push-6-of-12 {
+  margin-left: 50%;
+}
+
+.grid__col--push-1-of-3, .grid__col--push-2-of-6, .grid__col--push-4-of-12 {
+  margin-left: 33.33333%;
+}
+
+.grid__col--push-2-of-3, .grid__col--push-4-of-6, .grid__col--push-8-of-12 {
+  margin-left: 66.66667%;
+}
+
+.grid__col--push-1-of-4, .grid__col--push-2-of-8, .grid__col--push-3-of-12 {
+  margin-left: 25%;
+}
+
+.grid__col--push-3-of-4, .grid__col--push-6-of-8, .grid__col--push-9-of-12 {
+  margin-left: 75%;
+}
+
+.grid__col--pull-2-of-2, .grid__col--pull-3-of-3, .grid__col--pull-4-of-4, .grid__col--pull-5-of-5, .grid__col--pull-6-of-6, .grid__col--pull-8-of-8, .grid__col--pull-12-of-12 {
+  margin-left: -100%;
+}
+
+.grid__col--pull-1-of-2, .grid__col--pull-2-of-4, .grid__col--pull-3-of-6, .grid__col--pull-4-of-8, .grid__col--pull-6-of-12 {
+  margin-left: -50%;
+}
+
+.grid__col--pull-1-of-3, .grid__col--pull-2-of-6, .grid__col--pull-4-of-12 {
+  margin-left: -33.33333%;
+}
+
+.grid__col--pull-2-of-3, .grid__col--pull-4-of-6, .grid__col--pull-8-of-12 {
+  margin-left: -66.66667%;
+}
+
+.grid__col--pull-1-of-4, .grid__col--pull-2-of-8, .grid__col--pull-3-of-12 {
+  margin-left: -25%;
+}
+
+.grid__col--pull-3-of-4, .grid__col--pull-6-of-8, .grid__col--pull-9-of-12 {
+  margin-left: -75%;
+}
+
+.grid__col--1-of-5 {
+  width: 20%;
+}
+
+.grid__col--push-1-of-5 {
+  margin-left: 20%;
+}
+
+.grid__col--pull-1-of-5 {
+  margin-left: -20%;
+}
+
+.grid__col--2-of-5 {
+  width: 40%;
+}
+
+.grid__col--push-2-of-5 {
+  margin-left: 40%;
+}
+
+.grid__col--pull-2-of-5 {
+  margin-left: -40%;
+}
+
+.grid__col--3-of-5 {
+  width: 60%;
+}
+
+.grid__col--push-3-of-5 {
+  margin-left: 60%;
+}
+
+.grid__col--pull-3-of-5 {
+  margin-left: -60%;
+}
+
+.grid__col--4-of-5 {
+  width: 80%;
+}
+
+.grid__col--push-4-of-5 {
+  margin-left: 80%;
+}
+
+.grid__col--pull-4-of-5 {
+  margin-left: -80%;
+}
+
+.grid__col--1-of-6 {
+  width: 16.66667%;
+}
+
+.grid__col--push-1-of-6 {
+  margin-left: 16.66667%;
+}
+
+.grid__col--pull-1-of-6 {
+  margin-left: -16.66667%;
+}
+
+.grid__col--5-of-6 {
+  width: 83.33333%;
+}
+
+.grid__col--push-5-of-6 {
+  margin-left: 83.33333%;
+}
+
+.grid__col--pull-5-of-6 {
+  margin-left: -83.33333%;
+}
+
+.grid__col--1-of-8 {
+  width: 12.5%;
+}
+
+.grid__col--push-1-of-8 {
+  margin-left: 12.5%;
+}
+
+.grid__col--pull-1-of-8 {
+  margin-left: -12.5%;
+}
+
+.grid__col--3-of-8 {
+  width: 37.5%;
+}
+
+.grid__col--push-3-of-8 {
+  margin-left: 37.5%;
+}
+
+.grid__col--pull-3-of-8 {
+  margin-left: -37.5%;
+}
+
+.grid__col--5-of-8 {
+  width: 62.5%;
+}
+
+.grid__col--push-5-of-8 {
+  margin-left: 62.5%;
+}
+
+.grid__col--pull-5-of-8 {
+  margin-left: -62.5%;
+}
+
+.grid__col--7-of-8 {
+  width: 87.5%;
+}
+
+.grid__col--push-7-of-8 {
+  margin-left: 87.5%;
+}
+
+.grid__col--pull-7-of-8 {
+  margin-left: -87.5%;
+}
+
+.grid__col--1-of-12 {
+  width: 8.33333%;
+}
+
+.grid__col--push-1-of-12 {
+  margin-left: 8.33333%;
+}
+
+.grid__col--pull-1-of-12 {
+  margin-left: -8.33333%;
+}
+
+.grid__col--2-of-12 {
+  width: 16.66667%;
+}
+
+.grid__col--push-2-of-12 {
+  margin-left: 16.66667%;
+}
+
+.grid__col--pull-2-of-12 {
+  margin-left: -16.66667%;
+}
+
+.grid__col--5-of-12 {
+  width: 41.66667%;
+}
+
+.grid__col--push-5-of-12 {
+  margin-left: 41.66667%;
+}
+
+.grid__col--pull-5-of-12 {
+  margin-left: -41.66667%;
+}
+
+.grid__col--7-of-12 {
+  width: 58.33333%;
+}
+
+.grid__col--push-7-of-12 {
+  margin-left: 58.33333%;
+}
+
+.grid__col--pull-7-of-12 {
+  margin-left: -58.33333%;
+}
+
+.grid__col--10-of-12 {
+  width: 83.33333%;
+}
+
+.grid__col--push-10-of-12 {
+  margin-left: 83.33333%;
+}
+
+.grid__col--pull-10-of-12 {
+  margin-left: -83.33333%;
+}
+
+.grid__col--11-of-12 {
+  width: 91.66667%;
+}
+
+.grid__col--push-11-of-12 {
+  margin-left: 91.66667%;
+}
+
+.grid__col--pull-11-of-12 {
+  margin-left: -91.66667%;
+}
+
+.grid__col {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: -.25em;
+  min-height: 1px;
+  padding-left: 10px;
+  vertical-align: top;
+}
+@media (max-width: 700px) {
+  .grid__col {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+  }
+}
+@media (max-width: 700px) and (min-width: 480px) {
+  .grid__col[class*="grid__col--m-"] {
+    display: inline-block;
+    margin-right: -.24em;
+  }
+  .grid__col.grid__col--m-1-of-2, .grid__col.grid__col--m-2-of-4 {
+    width: 50%;
+  }
+  .grid__col.grid__col--m-1-of-3 {
+    width: 33.33333%;
+  }
+  .grid__col.grid__col--m-2-of-3 {
+    width: 66.66667%;
+  }
+  .grid__col.grid__col--m-1-of-4 {
+    width: 25%;
+  }
+  .grid__col.grid__col--m-3-of-4 {
+    width: 75%;
+  }
+}
+@media (max-width: 480px) {
+  .grid__col[class*="grid__col--s-"] {
+    display: inline-block;
+    margin-right: -.24em;
+  }
+  .grid__col.grid__col--s-1-of-2, .grid__col.grid__col--s-2-of-4 {
+    width: 50%;
+  }
+  .grid__col.grid__col--s-1-of-3 {
+    width: 33.33333%;
+  }
+  .grid__col.grid__col--s-2-of-3 {
+    width: 66.66667%;
+  }
+  .grid__col.grid__col--s-1-of-4 {
+    width: 25%;
+  }
+  .grid__col.grid__col--s-3-of-4 {
+    width: 75%;
+  }
+}
+
+.grid__col--centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid__col--d-first {
+  float: left;
+}
+
+.grid__col--d-last {
+  float: right;
+}
+
+.grid--no-gutter {
+  margin-left: 0;
+  width: 100%;
+}
+.grid--no-gutter .grid__col {
+  padding-left: 0;
+}
+.grid--no-gutter .grid__col--span-all {
+  margin-left: 0;
+  width: 100%;
+}
+
+.grid__col--ab {
+  vertical-align: bottom;
+}
+
+.grid__col--am {
+  vertical-align: middle;
+}
+
+* {
+  font-family: "Raleway";
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.space {
+  height: 1000px;
+}
+
+.lb {
+  font-weight: 400;
+}
+
+.black {
+  height: 100px;
+  background-color: black;
+}
+
+.front {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/clouds2.jpg);
+  background-size: cover;
+}
+
+.headingfont {
+  letter-spacing: 10px;
+  margin: 50px 0;
+  padding: 10px 20px;
+  color: black;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+/*header */
+header {
+  z-index: 99;
+  width: 100%;
+  position: fixed;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.name {
+  margin-top: 10px;
+  margin-left: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  font-size: 40px;
+  font-family: "Raleway Thin";
+  color: white;
+}
+
+.tab-container {
+  margin-right: 20px;
+  margin-top: 25px;
+}
+
+.tab {
+  opacity: 0.5;
+  color: teal;
+  margin: 0 10px;
+  transition-duration: 0.5s;
+}
+.tab:hover {
+  opacity: 1.5;
+    color: blue;
+  padding-bottom: 5px;
+  border-top bottom: 8px;
+}
+
+/*personal details */
+.meta-details-container {
+  height: 100%;
+  width: 100%;
+}
+
+.personal-details {
+  position: absolute;
+  padding: 15px 20px;
+  margin-left: -285px;
+  left: 50%;
+  top: 50%;
+  margin-top: -100px;
+  display: inline-block;
+  color: teal;
+  font-weight: 500;
+  font-size: 30px;
+  border-radius: 4px;
+  background-color: #BFBFBF;
+}
+
+.personal-meta-details {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  bottom: 0;
+  font-size: 18px;
+  color: #EEFEFF;
+  padding: 0px 30px;
+  padding-bottom: 100px;
+}
+
+.resume-button {
+  position: absolute;
+  top: 70%;
+  margin-top: -100px;
+  left: 50%;
+  margin-left: -100px;
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 50px;
+  color: teal;
+  border: 2px solid teal;
+  border-radius: 5px;
+  transition-duration: 0.25s;
+}
+.resume-button:hover {
+  background-color: white;
+  color: #34495e;
+}
+
+/*technology */
+.technology-holder {
+  padding-top: 10px;
+  padding-bottom: 100px;
+  background-color: #2574A9;
+}
+
+.language-container {
+  height: 225px;
+  background-size: 105% 105%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition-duration: 0.15s;
+}
+.language-container:hover {
+  background-size: 110% 110%;
+}
+
+.clanguage {
+  background-image: url(../images/c.jpg);
+  background-repeat: no-repeat;
+}
+
+.javalanguage {
+  background-image: url(../images/java.jpg);
+}
+
+.servletlanguage {
+  background-image: url(../images/servlet.jpg);
+}
+
+.strutslanguage {
+  background-image: url(../images/struts.jpg);
+}
+
+.mysqllanguage {
+  background-image: url(../images/mysql.jpg);
+}
+
+.htmllanguage {
+  background-image: url(../images/html.jpg);
+}
+
+.csslanguage {
+  background-image: url(../images/css.jpg);
+}
+
+.ajaxlanguage {
+  background-image: url(../images/ajax.jpg);
+}
+
+.bootstraplanguage {
+  background-image: url(../images/bootstrap.jpg);
+}
+
+.eclipselanguage {
+  background-image: url(../images/eclipse.jpg);
+}
+
+.hibernatelanguage {
+  height: 225px;
+  size: 100% 100%;
+  background-position: center;
+  background-image: url(../images/hibernate.jpg);
+  background-repeat: no-repeat;
+}
+
+/*projects */
+.projectscontainer {
+  background-color: white;
+}
+
+.projects-holder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.project-title {
+  margin-left: 10px;
+  padding-bottom: 3px;
+  font-size: 30px;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.project-description {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  color: #cccccc;
+}
+
+.project-technology {
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.project-database {
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+/*project 1 */
+.project1-holder {
+  height: 300px;
+  background-image: url(../images/music.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.project1-container {
+  height: 300px;
+}
+
+.project1-details {
+  position: relative;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/*project 2 */
+.project2-holder {
+  height: 300px;
+  background-image: url(../images/bus.jpg);
+  background-size: cover;
+}
+
+.project2-container {
+  height: 300px;
+}
+
+.project2-details {
+  position: relative;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/*contact */
+.contact-holder {
+  position: relative;
+  display: block;
+  margin-top: 0px !important;
+}
+@media screen and (max-width: 700px) {
+  .contact-holder {
+    margin-top: 350px !important;
+  }
+}
+
+/*location */
+.location-container {
+  height: 150px;
+  background-color: #1bbc9b;
+}
+
+.location-heading {
+ 
+    padding : 10px; 
+    padding-top: 40px;
+  font-size: 20px;
+  color: white;
+}
+
+/*email */
+.mail-container {
+  position: relative;
+  height: 150px;
+  background-color: #e84c3d;
+}
+
+.mail-email {
+  margin-top: -15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  color: white;
+  font-size: 20px;
+}
+
+/*social */
+.social-container {
+  height: 150px;
+  background-color: #e77e23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-holder {
+  height: 45px;
+  width: 200px;
+}
+
+.icon {
+  margin: 0 10px;
+  height: 45px;
+  width: 45px;
+  background-size: 100% 100%;
+}
+
+.facebook {
+  background-image: url(../images/facebook.png);
+}
+
+.in {
+  background-image: url(../images/in.png);
+}
+
+.plus {
+  background-image: url(../images/plus.png);
+}
