@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.03d5e037.chunk.css",
+    "main.js": "/static/js/main.0b21cd45.chunk.js",
+    "main.js.map": "/static/js/main.0b21cd45.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.00060668.js",
+    "runtime-main.js.map": "/static/js/runtime-main.00060668.js.map",
+    "static/js/2.7a0ec812.chunk.js": "/static/js/2.7a0ec812.chunk.js",
+    "static/js/2.7a0ec812.chunk.js.map": "/static/js/2.7a0ec812.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.2bc173808768e6647c68d8f1382dd7aa.js": "/precache-manifest.2bc173808768e6647c68d8f1382dd7aa.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.03d5e037.chunk.css.map": "/static/css/main.03d5e037.chunk.css.map",
+    "static/js/2.7a0ec812.chunk.js.LICENSE.txt": "/static/js/2.7a0ec812.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
+    "static/media/bulwarks.png": "/static/media/bulwarks.e9e97955.png",
+    "static/media/dataphion.png": "/static/media/dataphion.b620383a.png",
+    "static/media/f5.png": "/static/media/f5.d57f4313.png",
+    "static/media/all.css": "/static/media/fa-solid-900.c2801fb4.svg",
+    "static/media/mongo.png": "/static/media/mongo.d324ee17.png",
+    "static/media/snapfix.png": "/static/media/snapfix.964bcd4c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.00060668.js",
+    "static/js/2.7a0ec812.chunk.js",
+    "static/css/main.03d5e037.chunk.css",
+    "static/js/main.0b21cd45.chunk.js"
+  ]
+}
